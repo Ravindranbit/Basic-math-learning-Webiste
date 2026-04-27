@@ -1,17 +1,6 @@
 
 // React imports: useState, useEffect, useRef are React hooks for state, lifecycle, and DOM refs
-import React, { useState, useEffect, useRef } from 'react';
-
-// Example class component for demonstration
-class WelcomeBanner extends React.Component {
-  render() {
-    return (
-      <div className="bg-blue-100 text-blue-800 rounded-xl p-4 mb-6 text-center text-xl font-semibold">
-        👋 Welcome to the Math Learning App!
-      </div>
-    );
-  }
-}
+import { useState, useEffect, useRef } from 'react';
 // useNavigate and useLocation are React Router hooks for navigation and route info
 import { useNavigate, useLocation } from 'react-router-dom';
 // Lucide icons for UI visuals
@@ -449,8 +438,6 @@ const MathLearningApp = () => {
   const HomePage = () => (
     <div className="min-h-screen bg-white p-6">
       <div className="max-w-6xl mx-auto">
-        {/* Example usage of a class component */}
-        <WelcomeBanner />
         {/* Navigation Container */}
         <div className="mb-12 max-w-5xl mx-auto">
           <nav 
